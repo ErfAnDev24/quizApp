@@ -5,10 +5,10 @@ List<QuestionDto> getQuestions() {
   q1.title = 'who is the best magician?';
   q1.imageNumber = '1';
   q1.answerList = [
-    'ErfAn Pezeshkpour'
-        'Fatemeh Rafiei',
+    'ErfAn Pezeshkpour',
+    'Fatemeh Rafiei',
     'Ali karimi',
-    'Lebron James'
+    'Lebron James',
   ];
   q1.correctAnswer = 0;
 
@@ -17,10 +17,10 @@ List<QuestionDto> getQuestions() {
   q2.title = 'Who is the first astronaut in the world?';
   q2.imageNumber = '2';
   q2.answerList = [
-    'ErfAn Pezeshkpour'
-        'Nahid Sheykhi',
+    'ErfAn Pezeshkpour',
+    'Nahid Sheykhi',
     'Ehsan Pezeshkpour',
-    'Morteza Pashaie'
+    'Morteza Pashaie',
   ];
   q2.correctAnswer = 0;
 
@@ -31,7 +31,7 @@ List<QuestionDto> getQuestions() {
     'Developing Flutter',
     'Developing Java',
     'Playing Basketball',
-    'Steeling money'
+    'Steeling money',
   ];
   q3.correctAnswer = 3;
 
@@ -42,7 +42,7 @@ List<QuestionDto> getQuestions() {
     'Reporing Mr.Rubick',
     'Praying Atol korsi',
     'Stay Calm',
-    'fighting'
+    'fighting',
   ];
   q4.correctAnswer = 0;
 
@@ -53,7 +53,7 @@ List<QuestionDto> getQuestions() {
     'Going to beach',
     'Providing gun',
     'Reporing Mr.Rubick',
-    'Twitting to Donald Trump'
+    'Twitting to Donald Trump',
   ];
   q5.correctAnswer = 2;
 
@@ -64,7 +64,7 @@ List<QuestionDto> getQuestions() {
     'Abas bo azar',
     'Baqal sare koche',
     'Zakaria Razi',
-    'Hassan Rouhani'
+    'Hassan Rouhani',
   ];
   q6.correctAnswer = 2;
 
@@ -75,7 +75,7 @@ List<QuestionDto> getQuestions() {
     'Saeed Daravar Panah',
     'Mohammad Salah',
     'ErfAn Pezeshkpour',
-    'Mark Zuckerburg'
+    'Mark Zuckerburg',
   ];
   q7.correctAnswer = 1;
 
@@ -86,7 +86,7 @@ List<QuestionDto> getQuestions() {
     'Nill Amestedam',
     'Mohammad and his Hourse',
     'Someone who consume Drugs',
-    'ErfAn Pezeshkpour'
+    'ErfAn Pezeshkpour',
   ];
   q8.correctAnswer = 3;
 
@@ -96,7 +96,7 @@ List<QuestionDto> getQuestions() {
     'Calling ErfAn Pezeshkpour',
     'use Telescope',
     'Report Mr.Rubick',
-    'Playing the Last of us'
+    'Playing the Last of us',
   ];
   q9.imageNumber = '9';
   q9.correctAnswer = 0;
