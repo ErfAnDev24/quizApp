@@ -30,8 +30,8 @@ Widget getMainContent(BuildContext context) {
         height: 30,
       ),
       Container(
-        width: 300,
-        height: 300,
+        width: 270,
+        height: 270,
         child: Image(
           image: AssetImage('images/welcome.png'),
         ),

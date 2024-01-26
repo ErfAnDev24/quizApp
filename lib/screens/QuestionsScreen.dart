@@ -18,7 +18,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: getAppBar(),
+      appBar: getAppBar(shownQuestionNumber, getQuestions().length),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -27,8 +27,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
             height: 20,
           ),
           Container(
-            width: 300,
-            height: 300,
+            width: 270,
+            height: 270,
             child: Image(
               image: AssetImage(
                   'images/${questions[shownQuestionNumber].imageNumber}.png'),
@@ -39,7 +39,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           ),
           Text(
             '${questions[shownQuestionNumber].title}',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           SizedBox(
@@ -51,6 +51,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               title: Text(
                 '${questions[shownQuestionNumber].answerList![index]} (${index + 1}',
                 textAlign: TextAlign.end,
+                style: TextStyle(fontSize: 18),
               ),
               onTap: () {
                 setState(() {
@@ -72,6 +73,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
               },
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
           if (showingResult)
             ElevatedButton(
               onPressed: () {
@@ -82,6 +86,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 );
               },
               child: Text('Show Results!'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue, foregroundColor: Colors.white),
             ),
         ],
       ),
@@ -89,9 +95,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 }
 
-PreferredSizeWidget getAppBar() {
+PreferredSizeWidget getAppBar(int current, int total) {
   return AppBar(
-    title: Text('Questions'),
+    title: Text('Quection ${current + 1} / $total'),
     backgroundColor: Colors.blue,
     centerTitle: true,
     foregroundColor: Colors.white,
