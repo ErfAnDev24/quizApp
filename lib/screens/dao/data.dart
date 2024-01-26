@@ -33,7 +33,7 @@ List<QuestionDto> getQuestions() {
     'Playing Basketball',
     'Steeling money',
   ];
-  q3.correctAnswer = 3;
+  q3.correctAnswer = 0;
 
   var q4 = QuestionDto();
   q4.title = 'What is the best way in protecting ourseleves from Sharks?';
@@ -55,7 +55,7 @@ List<QuestionDto> getQuestions() {
     'Reporing Mr.Rubick',
     'Twitting to Donald Trump',
   ];
-  q5.correctAnswer = 2;
+  q5.correctAnswer = 0;
 
   var q6 = QuestionDto();
   q6.title = 'Who was the creater of Alcohol?';
@@ -66,7 +66,7 @@ List<QuestionDto> getQuestions() {
     'Zakaria Razi',
     'Hassan Rouhani',
   ];
-  q6.correctAnswer = 2;
+  q6.correctAnswer = 0;
 
   var q7 = QuestionDto();
   q7.title = "Who is the first javelin throw champion?";
@@ -77,7 +77,7 @@ List<QuestionDto> getQuestions() {
     'ErfAn Pezeshkpour',
     'Mark Zuckerburg',
   ];
-  q7.correctAnswer = 1;
+  q7.correctAnswer = 0;
 
   var q8 = QuestionDto();
   q8.title = 'Who was the first person that went to space?';
@@ -88,7 +88,7 @@ List<QuestionDto> getQuestions() {
     'Someone who consume Drugs',
     'ErfAn Pezeshkpour',
   ];
-  q8.correctAnswer = 3;
+  q8.correctAnswer = 0;
 
   var q9 = QuestionDto();
   q9.title = 'How to find the Moon?';
